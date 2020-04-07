@@ -9,8 +9,7 @@ public class AmChartPngExport {
 
     // Instantiate the ExportManager class
     ExportManager em = new ExportManager();
-    //TODO Add fusion export server configuration
-    em.setHostAndPort("http", "10.0.10.6", 1337);
+    em.setHostAndPort(ServerConfiguration.protocol, ServerConfiguration.host, ServerConfiguration.port);
 
     // Instantiate the ExportConfig class and add the required configurations
     ExportConfig config = new ExportConfig();
